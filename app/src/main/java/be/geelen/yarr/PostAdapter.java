@@ -11,8 +11,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.net.URI;
-
 import be.geelen.yarr.postPages.LastPage;
 import be.geelen.yarr.postPages.PostPage;
 import be.geelen.yarr.tools.HttpAsyncTask;

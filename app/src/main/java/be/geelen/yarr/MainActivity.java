@@ -3,27 +3,15 @@ package be.geelen.yarr;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.Window;
 
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.ResponseHandler;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.BasicResponseHandler;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.io.IOException;
 
 import be.geelen.yarr.comments.CommentsOverlay;
 import be.geelen.yarr.postPages.PostPageIndicator;
@@ -66,7 +54,7 @@ public class MainActivity
 
         postAdapter = new PostAdapter(getSupportFragmentManager(), url);
         voteViewPager = (VoteViewPager) findViewById(R.id.view_pager);
-        
+
         voteViewPager.setAdapter(postAdapter);
         postAdapter.setViewPager(voteViewPager);
 
